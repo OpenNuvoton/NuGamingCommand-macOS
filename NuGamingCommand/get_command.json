@@ -1,0 +1,374 @@
+[
+  {
+    "type": "Header",
+    "Name": "Misc",
+    "CMD": "",
+    "Note": ""
+  },
+  {
+    "type": "Item",
+    "Name": "Power",
+    "CMD": "35383030313030",
+    "Note": "回傳Template command. CMD3, CMD4, CMD5與Get command的CMD3, CMD4, CMD5相同. CMD6, CMD7, CMD8格式與Set command 相同"
+  },
+  {
+    "type": "Item",
+    "Name": "Home Key Event",
+    "CMD": "35383030313130",
+    "Note": "Reply CMD8:\n0x31 ->Power key long press\n0x30 ->Not event triggered"
+  },
+  {
+    "type": "Item",
+    "Name": "Get Current Game/Pro. Mode",
+    "CMD": "35383030313230",
+    "Note": "Reply CMD7:\n0x30 ->Game mode\n0x31 ->Profession mode\nReply CMD8:\nGame mode: USER->0x30, FPS->0x31, Racing ->0x32, RTS->3, RPG->0x34, Premium Color -> 0x35\nProfession mode: USER -> 0x30, Anti-Blue ( Reader ) -> 0x31, Movie ( Cinema ) -> 0x32, Office ( Designer ) -> 0x33, sRGB -> 0x34, Adobe RGB -> 0x35, Display P3 -> 0x36, Eco -> 0x37\n例如:\n當Monitor mode為Racing mode，使用Get current Game/Pro. Mode得到回傳值為CMD7: 0x30, CMD8: 0x32\n當Monitor mode為Eco mode，使用Get current Game/Pro. Mode得到回傳值為CMD7: 0x31, CMD8: 0x37"
+  },
+  {
+    "type": "Item",
+    "Name": "Get Current Model Index",
+    "CMD": "35383030313430",
+    "Note": "Reply CMD8: 0x30 ->MPG27C (Scaler NT68875)\n0x31 ->MPG27CQ (Scaler NT68394)\n0x32 ->MAG241C\n0x33 ->MAG271C\n0x34 ->MAG241CR\n0x35 ->MAG271CR\n0x36 ->MAG271CQR\n0x37 -> MPG271C\n0x38 -> MPG271CQ\n0x39 -> MPG27CQ2\n0x3A -> MAG321CQR\n0x3B -> MAG321CUR\n0x3C -> MAG271R\n0x3D -> MAG322CQR\n0x3E -> MPG341CQR\n0x3F -> PS341WU\n0x40 -> MAG271V"
+  },
+  {
+    "type": "Item",
+    "Name": "Get EDID SN",
+    "CMD": "35383030313330",
+    "Note": "SN Number is 13 characters.\n(Reply special command)\nCMD6 -> SN0,… CMD18 -> SN12"
+  },
+  {
+    "type": "Header",
+    "Name": "Gaming",
+    "CMD": "",
+    "Note": ""
+  },
+  {
+    "type": "Item",
+    "Name": "Gaming Mode",
+    "CMD": "35383030323030",
+    "Note": "回傳Template command. CMD3, CMD4, CMD5與Get command的CMD3, CMD4, CMD5相同. CMD6, CMD7, CMD8格式與Set command 相同"
+  },
+  {
+    "type": "Item",
+    "Name": "Response Time",
+    "CMD": "35383030323230",
+    "Note": "回傳Template command. CMD3, CMD4, CMD5與Get command的CMD3, CMD4, CMD5相同. CMD6, CMD7, CMD8格式與Set command 相同"
+  },
+  {
+    "type": "Item",
+    "Name": "Motion Blur Free",
+    "CMD": "35383030323330",
+    "Note": ""
+  },
+  {
+    "type": "Item",
+    "Name": "HDCR",
+    "CMD": "35383030323430",
+    "Note": "回傳Template command. CMD3, CMD4, CMD5與Get command的CMD3, CMD4, CMD5相同. CMD6, CMD7, CMD8格式與Set command 相同"
+  },
+  {
+    "type": "Item",
+    "Name": "FPS Counter",
+    "CMD": "35383030323530",
+    "Note": ""
+  },
+  {
+    "type": "Item",
+    "Name": "FPS Counter Location",
+    "CMD": "35383030323531",
+    "Note": ""
+  },
+  {
+    "type": "Item",
+    "Name": "Game Timer",
+    "CMD": "35383030323630",
+    "Note": ""
+  },
+  {
+    "type": "Item",
+    "Name": "Game Timer Setting Selection",
+    "CMD": "35383030323631",
+    "Note": ""
+  },
+  {
+    "type": "Item",
+    "Name": "Game Timer Counter",
+    "CMD": "35383030323632",
+    "Note": ""
+  },
+  {
+    "type": "Item",
+    "Name": "Game Timer Counter Location",
+    "CMD": "35383030323633",
+    "Note": ""
+  },
+  {
+    "type": "Item",
+    "Name": "Crosshair",
+    "CMD": "35383030323730",
+    "Note": ""
+  },
+  {
+    "type": "Item",
+    "Name": "AdaptiveSync",
+    "CMD": "35383030323830",
+    "Note": ""
+  },
+  {
+    "type": "Item",
+    "Name": "LatencyFree",
+    "CMD": "35383030323930",
+    "Note": ""
+  },
+  {
+    "type": "Item",
+    "Name": "Screen Size",
+    "CMD": "35383030323A30",
+    "Note": ""
+  },
+  {
+    "type": "Item",
+    "Name": "Adaptive Night Vision",
+    "CMD": "35383030323B30",
+    "Note": ""
+  },
+  {
+    "type": "Header",
+    "Name": "Professional",
+    "CMD": "",
+    "Note": ""
+  },
+  {
+    "type": "Item",
+    "Name": "Professional Mode",
+    "CMD": "35383030333030",
+    "Note": "回傳Template command. CMD3, CMD4, CMD5與Get command的CMD3, CMD4, CMD5相同. CMD6, CMD7, CMD8格式與Set command 相同"
+  },
+  {
+    "type": "Item",
+    "Name": "EyeCare",
+    "CMD": "35383030333130",
+    "Note": "回傳Template command. CMD3, CMD4, CMD5與Get command的CMD3, CMD4, CMD5相同. CMD6, CMD7, CMD8格式與Set command 相同"
+  },
+  {
+    "type": "Item",
+    "Name": "HDCR",
+    "CMD": "35383030323430",
+    "Note": "回傳Template command. CMD3, CMD4, CMD5與Get command的CMD3, CMD4, CMD5相同. CMD6, CMD7, CMD8格式與Set command 相同"
+  },
+  {
+    "type": "Item",
+    "Name": "Image Anti Blur",
+    "CMD": "35383030323330",
+    "Note": "回傳Template command. CMD3, CMD4, CMD5與Get command的CMD3, CMD4, CMD5相同. CMD6, CMD7, CMD8格式與Set command 相同"
+  },
+  {
+    "type": "Item",
+    "Name": "Contrast Enhance",
+    "CMD": "35383030333430",
+    "Note": "回傳Template command. CMD3, CMD4, CMD5與Get command的CMD3, CMD4, CMD5相同. CMD6, CMD7, CMD8格式與Set command 相同"
+  },
+  {
+    "type": "Header",
+    "Name": "Image",
+    "CMD": "",
+    "Note": ""
+  },
+  {
+    "type": "Item",
+    "Name": "Brightness",
+    "CMD": "35383030343030",
+    "Note": "回傳Template command. CMD3, CMD4, CMD5與Get command的CMD3, CMD4, CMD5相同. CMD6, CMD7, CMD8格式與Set command 相同"
+  },
+  {
+    "type": "Item",
+    "Name": "Contrast",
+    "CMD": "35383030343130",
+    "Note": "回傳Template command. CMD3, CMD4, CMD5與Get command的CMD3, CMD4, CMD5相同. CMD6, CMD7, CMD8格式與Set command 相同"
+  },
+  {
+    "type": "Item",
+    "Name": "Sharpness",
+    "CMD": "35383030343230",
+    "Note": "回傳Template command. CMD3, CMD4, CMD5與Get command的CMD3, CMD4, CMD5相同. CMD6, CMD7, CMD8格式與Set command 相同"
+  },
+  {
+    "type": "Item",
+    "Name": "Color Temperature",
+    "CMD": "35383030343330",
+    "Note": "回傳Template command. CMD3, CMD4, CMD5與Get command的CMD3, CMD4, CMD5相同. CMD6, CMD7, CMD8格式與Set command 相同"
+  },
+  {
+    "type": "Item",
+    "Name": "Color RED",
+    "CMD": "35383030343331",
+    "Note": "回傳Template command. CMD3, CMD4, CMD5與Get command的CMD3, CMD4, CMD5相同. CMD6, CMD7, CMD8格式與Set command 相同"
+  },
+  {
+    "type": "Item",
+    "Name": "Color GREEN",
+    "CMD": "35383030343332",
+    "Note": "回傳Template command. CMD3, CMD4, CMD5與Get command的CMD3, CMD4, CMD5相同. CMD6, CMD7, CMD8格式與Set command 相同"
+  },
+  {
+    "type": "Item",
+    "Name": "Color BLUE",
+    "CMD": "35383030343333",
+    "Note": "回傳Template command. CMD3, CMD4, CMD5與Get command的CMD3, CMD4, CMD5相同. CMD6, CMD7, CMD8格式與Set command 相同"
+  },
+  {
+    "type": "Item",
+    "Name": "Color RGB",
+    "CMD": "35383030343334",
+    "Note": "回傳Template command. CMD3, CMD4, CMD5與Get command的CMD3, CMD4, CMD5相同. CMD6, CMD7, CMD8格式與Set command 相同"
+  },
+  {
+    "type": "Header",
+    "Name": "Input Source",
+    "CMD": "",
+    "Note": ""
+  },
+  {
+    "type": "Item",
+    "Name": "Switch InputSource",
+    "CMD": "35383030353030",
+    "Note": "回傳Template command. CMD3, CMD4, CMD5與Get command的CMD3, CMD4, CMD5相同. CMD6, CMD7, CMD8格式與Set command 相同"
+  },
+  {
+    "type": "Header",
+    "Name": "PIP/PBP",
+    "CMD": "",
+    "Note": ""
+  },
+  {
+    "type": "Item",
+    "Name": "OFF/PBP/PIP",
+    "CMD": "35383030363030",
+    "Note": "回傳Template command. CMD3, CMD4, CMD5與Get command的CMD3, CMD4, CMD5相同. CMD6, CMD7, CMD8格式與Set command 相同"
+  },
+  {
+    "type": "Item",
+    "Name": "PBP Source",
+    "CMD": "35383030363130",
+    "Note": "回傳Template command. CMD3, CMD4, CMD5與Get command的CMD3, CMD4, CMD5相同. CMD6, CMD7, CMD8格式與Set command 相同"
+  },
+  {
+    "type": "Item",
+    "Name": "PIP Source",
+    "CMD": "35383030363230",
+    "Note": "回傳Template command. CMD3, CMD4, CMD5與Get command的CMD3, CMD4, CMD5相同. CMD6, CMD7, CMD8格式與Set command 相同"
+  },
+  {
+    "type": "Item",
+    "Name": "PIP Size",
+    "CMD": "35383030363330",
+    "Note": "回傳Template command. CMD3, CMD4, CMD5與Get command的CMD3, CMD4, CMD5相同. CMD6, CMD7, CMD8格式與Set command 相同"
+  },
+  {
+    "type": "Item",
+    "Name": "PIP Location",
+    "CMD": "35383030363430",
+    "Note": "回傳Template command. CMD3, CMD4, CMD5與Get command的CMD3, CMD4, CMD5相同. CMD6, CMD7, CMD8格式與Set command 相同"
+  },
+  {
+    "type": "Header",
+    "Name": "Mystic Light",
+    "CMD": "",
+    "Note": ""
+  },
+  {
+    "type": "Item",
+    "Name": "Light ON/OFF",
+    "CMD": "35383030373030",
+    "Note": ""
+  },
+  {
+    "type": "Item",
+    "Name": "Static",
+    "CMD": "35383030373130",
+    "Note": ""
+  },
+  {
+    "type": "Item",
+    "Name": "Breathing",
+    "CMD": "35383030373230",
+    "Note": ""
+  },
+  {
+    "type": "Item",
+    "Name": "Lightning",
+    "CMD": "35383030373330",
+    "Note": ""
+  },
+  {
+    "type": "Header",
+    "Name": "Setting",
+    "CMD": "",
+    "Note": ""
+  },
+  {
+    "type": "Item",
+    "Name": "Language",
+    "CMD": "35383030383030",
+    "Note": "0 ->Traditional Chinese,1 ->English,2 ->French,3 ->German,4 ->Italian,5 ->Spanish,6 ->Korean,7 ->Japanese,8 ->Russian,9 ->Portuguese,10 ->Simplified Chinese,11 ->Thai,12 ->Indonesian,13 ->Hindi,14 ->Turkish,15 ->Danish,16 ->Dutch,17 ->Finnish,18 ->Norwegian,19 ->Polish,20 ->Swedish,21 ->Arbic,22 ->Persian,23 ->Hebrew,24 ->Bengali,25 ->Vietnamese,26 ->Czech,27 ->Hungarian,28 ->Slovakian"
+  },
+  {
+    "type": "Item",
+    "Name": "Transparency",
+    "CMD": "35383030383130",
+    "Note": "回傳Template command. CMD3, CMD4, CMD5與Get command的CMD3, CMD4, CMD5相同. CMD6, CMD7, CMD8格式與Set command 相同"
+  },
+  {
+    "type": "Item",
+    "Name": "OSD Time out",
+    "CMD": "35383030383230",
+    "Note": "回傳Template command. CMD3, CMD4, CMD5與Get command的CMD3, CMD4, CMD5相同. CMD6, CMD7, CMD8格式與Set command 相同"
+  },
+  {
+    "type": "Item",
+    "Name": "Infomation",
+    "CMD": "35383030383330",
+    "Note": "回傳Template command. CMD3, CMD4, CMD5與Get command的CMD3, CMD4, CMD5相同. CMD6, CMD7, CMD8格式與Set command 相同"
+  },
+  {
+    "type": "Item",
+    "Name": "Audio Select",
+    "CMD": "35383030383530",
+    "Note": "回傳Template command. CMD3, CMD4, CMD5與Get command的CMD3, CMD4, CMD5相同. CMD6, CMD7, CMD8格式與Set command 相同"
+  },
+  {
+    "type": "Item",
+    "Name": "Reset",
+    "CMD": "35383030383430",
+    "Note": "回傳Template command. CMD3, CMD4, CMD5與Get command的CMD3, CMD4, CMD5相同. CMD6, CMD7, CMD8格式與Set command 相同"
+  },
+  {
+    "type": "Header",
+    "Name": "Navi Key",
+    "CMD": "",
+    "Note": ""
+  },
+  {
+    "type": "Item",
+    "Name": "Up",
+    "CMD": "35383030393030",
+    "Note": "回傳Template command. CMD3, CMD4, CMD5與Get command的CMD3, CMD4, CMD5相同. CMD6, CMD7, CMD8格式與Set command 相同"
+  },
+  {
+    "type": "Item",
+    "Name": "Down",
+    "CMD": "35383030393130",
+    "Note": "回傳Template command. CMD3, CMD4, CMD5與Get command的CMD3, CMD4, CMD5相同. CMD6, CMD7, CMD8格式與Set command 相同"
+  },
+  {
+    "type": "Item",
+    "Name": "Left",
+    "CMD": "35383030393230",
+    "Note": "回傳Template command. CMD3, CMD4, CMD5與Get command的CMD3, CMD4, CMD5相同. CMD6, CMD7, CMD8格式與Set command 相同"
+  },
+  {
+    "type": "Item",
+    "Name": "Right",
+    "CMD": "35383030393330",
+    "Note": "回傳Template command. CMD3, CMD4, CMD5與Get command的CMD3, CMD4, CMD5相同. CMD6, CMD7, CMD8格式與Set command 相同"
+  }
+]

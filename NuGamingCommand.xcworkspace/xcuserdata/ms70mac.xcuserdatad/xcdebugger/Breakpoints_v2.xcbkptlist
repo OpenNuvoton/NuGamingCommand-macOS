@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "FBC86432-E5E9-4933-BF45-AFBEDFFD7613"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "20818711-0685-478E-82E8-F76A3B4660CA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/USBDeviceSwift/Sources/USBDeviceMonitor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "start()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DECA936F-64B3-4DCB-8A36-45B438F194BF"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/USBDeviceSwift/Sources/USBDeviceMonitor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "start()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "DECA936F-64B3-4DCB-8A36-45B438F194BF - 1e5df388d802bfa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "USBDeviceSwift.USBDeviceMonitor.start() -&gt; ()"
+                  moduleName = "USBDeviceSwift"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ms70mac/Documents%20HD/WPHU/macOS/NuGamingCommand/Pods/USBDeviceSwift/Sources/USBDeviceMonitor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "4500">
+               </Location>
+               <Location
+                  uuid = "DECA936F-64B3-4DCB-8A36-45B438F194BF - 1e5df388d802bfa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "USBDeviceSwift.USBDeviceMonitor.start() -&gt; ()"
+                  moduleName = "USBDeviceSwift"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ms70mac/Documents%20HD/WPHU/macOS/NuGamingCommand/Pods/USBDeviceSwift/Sources/USBDeviceMonitor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "4644">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "358D1B56-6C47-427A-A893-EE0B2C5D28BD"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/USBDeviceSwift/Sources/USBDeviceMonitor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "start()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "358D1B56-6C47-427A-A893-EE0B2C5D28BD - 1e5df388d802bdb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "USBDeviceSwift.USBDeviceMonitor.start() -&gt; ()"
+                  moduleName = "USBDeviceSwift"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ms70mac/Documents%20HD/WPHU/macOS/NuGamingCommand/Pods/USBDeviceSwift/Sources/USBDeviceMonitor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "4524">
+               </Location>
+               <Location
+                  uuid = "358D1B56-6C47-427A-A893-EE0B2C5D28BD - 1e5df388d802bdb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "USBDeviceSwift.USBDeviceMonitor.start() -&gt; ()"
+                  moduleName = "USBDeviceSwift"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ms70mac/Documents%20HD/WPHU/macOS/NuGamingCommand/Pods/USBDeviceSwift/Sources/USBDeviceMonitor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "4668">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3C4C7D85-4437-47EA-9540-FD99B2904F48"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/USBDeviceSwift/Sources/USBDeviceMonitor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "start()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3C4C7D85-4437-47EA-9540-FD99B2904F48 - 1e5df388d802e7f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "USBDeviceSwift.USBDeviceMonitor.start() -&gt; ()"
+                  moduleName = "USBDeviceSwift"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ms70mac/Documents%20HD/WPHU/macOS/NuGamingCommand/Pods/USBDeviceSwift/Sources/USBDeviceMonitor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "332">
+               </Location>
+               <Location
+                  uuid = "3C4C7D85-4437-47EA-9540-FD99B2904F48 - 1e5df388d802e7f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "USBDeviceSwift.USBDeviceMonitor.start() -&gt; ()"
+                  moduleName = "USBDeviceSwift"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ms70mac/Documents%20HD/WPHU/macOS/NuGamingCommand/Pods/USBDeviceSwift/Sources/USBDeviceMonitor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "412">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

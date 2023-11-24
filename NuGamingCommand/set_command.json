@@ -1,0 +1,374 @@
+[
+  {
+    "type": "Header",
+    "Name": "Misc",
+    "CMD": "",
+    "Note": ""
+  },
+  {
+    "type": "Item",
+    "Name": "Power",
+    "CMD": "35623030313030303030",
+    "Note": "ON->1,OFF->0"
+  },
+  {
+    "type": "Item",
+    "Name": "Set EDID SN",
+    "CMD": "35623030313330303132333435363738393A3B3C",
+    "Note": ""
+  },
+  {
+    "type": "Header",
+    "Name": "Gaming",
+    "CMD": "",
+    "Note": ""
+  },
+  {
+    "type": "Item",
+    "Name": "Gaming Mode",
+    "CMD": "35623030323030303030",
+    "Note": "USER->0, FPS->1, Racing ->2,\nRTS->3,RPG->4, Premium Color->5"
+  },
+  {
+    "type": "Item",
+    "Name": "Black Equalizer",
+    "CMD": "35623030323130303030",
+    "Note": "CMD7->十位數, CMD8->個位數 Ex: Black Tuner:10 -> CMD7:0x31, CMD8:0x30 Black Tuner:7 -> CMD7:0x30, CMD8:0x37"
+  },
+  {
+    "type": "Item",
+    "Name": "Response Time",
+    "CMD": "35623030323230303030",
+    "Note": "Normal->0, Fast->1, Fastest->2"
+  },
+  {
+    "type": "Item",
+    "Name": "Motion Blur Free",
+    "CMD": "35623030323330303030",
+    "Note": "ON->1, OFF->0"
+  },
+  {
+    "type": "Item",
+    "Name": "HDCR",
+    "CMD": "35623030323430303030",
+    "Note": "ON->1, OFF->0"
+  },
+  {
+    "type": "Item",
+    "Name": "FPS Counter",
+    "CMD": "35623030323530303030",
+    "Note": "CMD8:ON->1, OFF->0"
+  },
+  {
+    "type": "Item",
+    "Name": "FPS Counter Location",
+    "CMD": "35623030323531303030",
+    "Note": "CMD8:LT->0, RT->1, LB->2, RB->3"
+  },
+  {
+    "type": "Item",
+    "Name": "Game Timer",
+    "CMD": "35623030323630303030",
+    "Note": "CMD8:OFF->0, Timer1->1, Timer2->2, Timer3->3, Timer->4"
+  },
+  {
+    "type": "Item",
+    "Name": "Game Timer Setting Selection",
+    "CMD": "35623030323631303030",
+    "Note": "CMD8:Timer1->1, Timer2->2, Timer3->3, Timer->4"
+  },
+  {
+    "type": "Item",
+    "Name": "Game Timer Counter",
+    "CMD": "35623030323632303030",
+    "Note": "CMD6|CMD7|CMD8:xx seconds"
+  },
+  {
+    "type": "Item",
+    "Name": "Game Timer Counter Location",
+    "CMD": "35623030323633303030",
+    "Note": ""
+  },
+  {
+    "type": "Item",
+    "Name": "Crosshair",
+    "CMD": "35623030323730303030",
+    "Note": "CMD8:OFF->0,ICON1~->1~"
+  },
+  {
+    "type": "Item",
+    "Name": "AdaptiveSync",
+    "CMD": "35623030323830303030",
+    "Note": "CMD8:ON->1,OFF->0"
+  },
+  {
+    "type": "Item",
+    "Name": "LatencyFree",
+    "CMD": "35623030323930303030",
+    "Note": "CMD8:ON->1,OFF->0"
+  },
+  {
+    "type": "Item",
+    "Name": "Screen Size",
+    "CMD": "35623030323A30303030",
+    "Note": ""
+  },
+  {
+    "type": "Item",
+    "Name": "Adaptive Night Vision",
+    "CMD": "35623030323B30303030",
+    "Note": "CMD8:OFF->0,Normal->1,Strong->2,Strongest->3,Auto->4"
+  },
+  {
+    "type": "Header",
+    "Name": "Professional",
+    "CMD": "",
+    "Note": ""
+  },
+  {
+    "type": "Item",
+    "Name": "Professional Mode",
+    "CMD": "35623030333030303030",
+    "Note": "USER -> 0x00, Anti-Blue ( Reader ) -> 0x01, Movie ( Cinema ) -> 0x02, Office ( Designer ) -> 0x03, sRGB -> 0x04, Adobe RGB -> 0x05, Display P3 -> 0x06, Eco -> 0x07"
+  },
+  {
+    "type": "Item",
+    "Name": "EyeCare",
+    "CMD": "35623030333130303030",
+    "Note": "ON->1,OFF->0"
+  },
+  {
+    "type": "Item",
+    "Name": "HDCR",
+    "CMD": "35623030323430303030",
+    "Note": "ON->1,OFF->0"
+  },
+  {
+    "type": "Item",
+    "Name": "Image Anti Blur",
+    "CMD": "35623030323330303030",
+    "Note": "OFF->0,Weak->1,Medium->2,Strong->3,Strongest->4"
+  },
+  {
+    "type": "Item",
+    "Name": "Contrast Enhance",
+    "CMD": "35623030333430303030",
+    "Note": ""
+  },
+  {
+    "type": "Header",
+    "Name": "Image",
+    "CMD": "",
+    "Note": ""
+  },
+  {
+    "type": "Item",
+    "Name": "Brightness",
+    "CMD": "35623030343030303030",
+    "Note": "0~100"
+  },
+  {
+    "type": "Item",
+    "Name": "Contrast",
+    "CMD": "35623030343130303030",
+    "Note": "0~100"
+  },
+  {
+    "type": "Item",
+    "Name": "Sharpness",
+    "CMD": "35623030343230303030",
+    "Note": ""
+  },
+  {
+    "type": "Item",
+    "Name": "Color Temperature",
+    "CMD": "35623030343330303030",
+    "Note": "Cool->0, Normal->1, Warm->2, Custiomization->3"
+  },
+  {
+    "type": "Item",
+    "Name": "Color RED",
+    "CMD": "35623030343331303030",
+    "Note": "0~100"
+  },
+  {
+    "type": "Item",
+    "Name": "Color GREEN",
+    "CMD": "35623030343332303030",
+    "Note": "0~100"
+  },
+  {
+    "type": "Item",
+    "Name": "Color BLUE",
+    "CMD": "35623030343333303030",
+    "Note": "0~100"
+  },
+  {
+    "type": "Item",
+    "Name": "Color RGB",
+    "CMD": "35623030343334303030",
+    "Note": "CMD6->R Gain,CMD7->G Gain,CMD8->B Gain(0~100)"
+  },
+  {
+    "type": "Header",
+    "Name": "Input Source",
+    "CMD": "",
+    "Note": ""
+  },
+  {
+    "type": "Item",
+    "Name": "Switch InputSource",
+    "CMD": "35623030353030303030",
+    "Note": "HDMI1->0,HDMI2->1,DP->2,TYPC-C->3"
+  },
+  {
+    "type": "Header",
+    "Name": "PIP/PBP",
+    "CMD": "",
+    "Note": ""
+  },
+  {
+    "type": "Item",
+    "Name": "OFF/PBP/PIP",
+    "CMD": "35623030363030303030",
+    "Note": "OFF->0,PIP->1,PBP(x2)->2,PBP(x3)->3,PBP(x4)->4"
+  },
+  {
+    "type": "Item",
+    "Name": "PBP Source",
+    "CMD": "35623030363130303030",
+    "Note": "HDMI1->0,HDMI2->1,DP->2,TYPC-C->3"
+  },
+  {
+    "type": "Item",
+    "Name": "PIP Source",
+    "CMD": "35623030363230303030",
+    "Note": "HDMI1->0,HDMI2->1,DP->2,TYPC-C->3"
+  },
+  {
+    "type": "Item",
+    "Name": "PIP Size",
+    "CMD": "35623030363330303030",
+    "Note": "Small->0, Medium->1, Large->2"
+  },
+  {
+    "type": "Item",
+    "Name": "PIP Location",
+    "CMD": "35623030363430303030",
+    "Note": "LeftTop->0,RightTop->1,LeftBottom->2,RightBottom->3,Customize->4"
+  },
+  {
+    "type": "Header",
+    "Name": "Mystic Light",
+    "CMD": "",
+    "Note": ""
+  },
+  {
+    "type": "Item",
+    "Name": "Light ON/OFF",
+    "CMD": "35623030373030303030",
+    "Note": ""
+  },
+  {
+    "type": "Item",
+    "Name": "Static",
+    "CMD": "35623030373130303030",
+    "Note": ""
+  },
+  {
+    "type": "Item",
+    "Name": "Breathing",
+    "CMD": "35623030373230303030",
+    "Note": ""
+  },
+  {
+    "type": "Item",
+    "Name": "Lightning",
+    "CMD": "35623030373330303030",
+    "Note": ""
+  },
+  {
+    "type": "Header",
+    "Name": "Setting",
+    "CMD": "",
+    "Note": ""
+  },
+  {
+    "type": "Item",
+    "Name": "Language",
+    "CMD": "35623030383030303030",
+    "Note": "0 ->Traditional Chinese,1 ->English,2 ->French,3 ->German,4 ->Italian,5 ->Spanish,6 ->Korean,7 ->Japanese,8 ->Russian,9 ->Portuguese,10 ->Simplified Chinese,11 ->Thai,12 ->Indonesian,13 ->Hindi,14 ->Turkish,15 ->Danish,16 ->Dutch,17 ->Finnish,18 ->Norwegian,19 ->Polish,20 ->Swedish,21 ->Arbic,22 ->Persian,23 ->Hebrew,24 ->Bengali,25 ->Vietnamese,26 ->Czech,27 ->Hungarian,28 ->Slovakian"
+  },
+  {
+    "type": "Item",
+    "Name": "Transparency",
+    "CMD": "35623030383130303030",
+    "Note": "0~5"
+  },
+  {
+    "type": "Item",
+    "Name": "OSD Time out",
+    "CMD": "35623030383230303030",
+    "Note": "5~30"
+  },
+  {
+    "type": "Item",
+    "Name": "Infomation",
+    "CMD": "35623030383330303030",
+    "Note": "ON->1,OFF->0"
+  },
+  {
+    "type": "Item",
+    "Name": "Audio Select",
+    "CMD": "35623030383530303030",
+    "Note": "Analog->0, Digital->1"
+  },
+  {
+    "type": "Item",
+    "Name": "Reset",
+    "CMD": "35623030383430303031",
+    "Note": ""
+  },
+  {
+    "type": "Header",
+    "Name": "Navi Key",
+    "CMD": "",
+    "Note": ""
+  },
+  {
+    "type": "Item",
+    "Name": "Up",
+    "CMD": "35623030393030303030",
+    "Note": "數值僅供參考，預設順序依照各Model OSD Tree定義 OFF->0,Brightness->1,Game mode switch->2,Screen Assistance->3,Alarm Clock->4,Input source->5,PIP/PBP Mode->6,Refresh rate->7,Information on screen->8,Night Vision->9,KVM->10 CMD7:十位數 CMD8:個位數 Ex: Index:10 -> CMD7:0x31, CMD8 :0x30"
+  },
+  {
+    "type": "Item",
+    "Name": "Down",
+    "CMD": "35623030393130303030",
+    "Note": "數值僅供參考，預設順序依照各Model OSD Tree定義 OFF->0,Brightness->1,Game mode switch->2,Screen Assistance->3,Alarm Clock->4,Input source->5,PIP/PBP Mode->6,Refresh rate->7,Information on screen->8,Night Vision->9,KVM->10 CMD7:十位數 CMD8:個位數 Ex: Index:10 -> CMD7:0x31, CMD8 :0x30"
+  },
+  {
+    "type": "Item",
+    "Name": "Left",
+    "CMD": "35623030393230303030",
+    "Note": "數值僅供參考，預設順序依照各Model OSD Tree定義 OFF->0,Brightness->1,Game mode switch->2,Screen Assistance->3,Alarm Clock->4,Input source->5,PIP/PBP Mode->6,Refresh rate->7,Information on screen->8,Night Vision->9,KVM->10 CMD7:十位數 CMD8:個位數 Ex: Index:10 -> CMD7:0x31, CMD8 :0x30"
+  },
+  {
+    "type": "Item",
+    "Name": "Right",
+    "CMD": "35623030393330303030",
+    "Note": "數值僅供參考，預設順序依照各Model OSD Tree定義 OFF->0,Brightness->1,Game mode switch->2,Screen Assistance->3,Alarm Clock->4,Input source->5,PIP/PBP Mode->6,Refresh rate->7,Information on screen->8,Night Vision->9,KVM->10 CMD7:十位數 CMD8:個位數 Ex: Index:10 -> CMD7:0x31, CMD8 :0x30"
+  },
+  {
+    "type": "Header",
+    "Name": "Set Special Command",
+    "CMD": "",
+    "Note": ""
+  },
+  {
+    "type": "Item",
+    "Name": "Special Command",
+    "CMD": "35623030316530303030303030303030303030303030303030",
+    "Note": ""
+  }
+]
