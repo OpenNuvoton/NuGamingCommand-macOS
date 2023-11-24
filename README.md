@@ -15,3 +15,6 @@ macOS 應用程式 NuGamingCommand Tool，這是一個為協助 Monitor 控制�
 3.GetCMD與SetCMD API功能：
 應用程式內置了 GetCMD 與 SetCMD API功能，讓參考此 Sample 的使用者可以更簡單的透過API進行讀取與寫入相關CMD的動作。
 
+<p float="left">
+<img src="https://github.com/OpenNuvoton/NuGamingCommand-macOS/blob/main/image.png" alt="Cover" width="80%"/>
+</p>
