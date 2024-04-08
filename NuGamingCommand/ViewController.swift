@@ -104,10 +104,10 @@ class ViewController: NSViewController {
         homeKeyCheckbox.target = self
         homeKeyCheckbox.action = #selector(checkboxStateChanged(_:))
         idText.delegate = self
-        // 設定只接受數字
-        let numberFormatter = NumberFormatter()
-        numberFormatter.numberStyle = .none
-        idText.formatter = numberFormatter
+//        // 設定只接受數字
+//        let numberFormatter = NumberFormatter()
+//        numberFormatter.numberStyle = .none
+//        idText.formatter = numberFormatter
         
         //宣告接收事件通知
         NotificationCenter.default.addObserver(self, selector: #selector(self.usbConnected), name: .HIDDeviceConnected, object: nil)
@@ -278,6 +278,10 @@ class ViewController: NSViewController {
                     hexString.append(sf.stringValue)
                 }
                 
+                for rf in  self.readFields{
+                    rf.stringValue = ""
+                }
+   
                 byteArray = HexTool().hexStringToBytes(hexString)
 
                 MSILed.getCMD(usbDevice: connectedDevice, cmdBuffer: byteArray) { asd, istrue in
@@ -304,6 +308,7 @@ class ViewController: NSViewController {
         }
     }
     
+    //裝置斷線
     @objc func usbDisconnected(notification: NSNotification) {
         guard let nobj = notification.object as? NSDictionary else {
             return
@@ -313,10 +318,29 @@ class ViewController: NSViewController {
             return
         }
         DispatchQueue.main.async {
-            if let index = self.devices.index(where: { $0.deviceInfo.id == id }) {
+            if let index = self.devices.firstIndex(where: { $0.deviceInfo.id == id }) {
                 self.devices.remove(at: index)
                 if (id == self.connectedDevice?.deviceInfo.id) {
+                    self.connectButton.title = "Connect"
+                    self.devicesComboBox.isEnabled = true
                     self.connectedDevice = nil
+                    self.devicesComboBox.stringValue=""
+                    self.devicesComboBox.reloadData()
+                    
+                    self.timer?.invalidate()  // Stop the timer
+                    self.timer = nil
+                    self.homeKeyCheckbox.state = .off
+                    self.connectButton.isEnabled = true
+                
+                    let alert = NSAlert()
+                    alert.messageText = "Informational"
+                    alert.informativeText = "Device USB HID is Disconnected"
+                    alert.alertStyle = .informational
+                    // 添加確定按鈕
+                    alert.addButton(withTitle: "ok")
+                    // 顯示訊息視窗
+                    alert.runModal()
+                    
                 }
             }
             self.devicesComboBox.reloadData()
@@ -371,7 +395,7 @@ class ViewController: NSViewController {
                     return
                 }
                 
-                self.readFields[i-1].stringValue = byte.toHexString()
+//                self.readFields[i-1].stringValue = byte.toHexString()
             }
         }
         
@@ -391,17 +415,32 @@ class ViewController: NSViewController {
 
 extension ViewController : NSTextFieldDelegate{
     
-    // NSTextFieldDelegate method to limit the length
-      func controlTextDidChange(_ obj: Notification) {
-          if let textField = obj.object as? NSTextField {
-              let maxLength = 8
-              if textField.stringValue.count > maxLength {
-                  let index = textField.stringValue.index(textField.stringValue.startIndex, offsetBy: maxLength)
-                  textField.stringValue = String(textField.stringValue.prefix(upTo: index))
-              }
-          }
-      }
     
+    // NSTextFieldDelegate method to limit the length
+//      func controlTextDidChange(_ obj: Notification) {
+//          if let textField = obj.object as? NSTextField {
+//              let maxLength = 8
+//              if textField.stringValue.count > maxLength {
+//                  let index = textField.stringValue.index(textField.stringValue.startIndex, offsetBy: maxLength)
+//                  textField.stringValue = String(textField.stringValue.prefix(upTo: index))
+//              }
+//          }
+//      }
+    func controlTextDidChange(_ obj: Notification) {
+        let characterSet = CharacterSet(charactersIn: "0123456789ABCDEF")
+        if let textField = obj.object as? NSTextField {
+            let maxLength = 8
+            if textField.stringValue.count > maxLength {
+                let index = textField.stringValue.index(textField.stringValue.startIndex, offsetBy: maxLength)
+                textField.stringValue = String(textField.stringValue.prefix(upTo: index))
+            }
+            // 检查输入是否包含无效字符，如果有，则删除它们
+            let filteredString = String(textField.stringValue.uppercased().filter { characterSet.contains(UnicodeScalar(String($0))!) })
+            if filteredString != textField.stringValue.uppercased() {
+                textField.stringValue = filteredString
+            }
+        }
+    }
 }
 
 //USB HID 可連線裝置列表
@@ -465,6 +504,10 @@ extension ViewController : NSTableViewDelegate,NSTableViewDataSource {
     func tableViewSelectionDidChange(_ notification: Notification) {
         if let tableView = notification.object as? NSTableView {
             
+            if(tableView.selectedRow == -1){
+                return
+            }
+            
             var selectedButtonInfo : ButtonInfo? = nil
             for i in 0..<sendFields.count {
                 sendFields[i].stringValue = ""
@@ -474,12 +517,13 @@ extension ViewController : NSTableViewDelegate,NSTableViewDataSource {
             if tableView == self.tabListView {
                 let selectedRow = tableView.selectedRow
                 selectedButtonInfo = buttonInfoArray[selectedRow]// 获取选定行的数据
+                // 清除另一欄选中行的聚焦状态
+                self.tabListView2.deselectAll(nil)
                 
-            }
-            if tableView == self.tabListView2 {
+            } else if tableView == self.tabListView2 {
                 let selectedRow = tableView.selectedRow
                 selectedButtonInfo = buttonInfoArray2[selectedRow]// 获取选定行的数据
-                
+                self.tabListView.deselectAll(nil)
             }
             
             // 在这里处理点击事件，可以根据选定的数据执行相应的操作
@@ -508,4 +552,6 @@ extension ViewController : NSTableViewDelegate,NSTableViewDataSource {
             
         }
     }
+    
+    
 }

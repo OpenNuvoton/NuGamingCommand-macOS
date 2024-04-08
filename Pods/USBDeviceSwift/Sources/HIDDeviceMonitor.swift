@@ -26,8 +26,8 @@ open class HIDDeviceMonitor {
         for vp in self.vp {
             deviceMatches.append([kIOHIDProductIDKey: vp.productId, kIOHIDVendorIDKey: vp.vendorId])
         }
-        IOHIDManagerSetDeviceMatchingMultiple(managerRef, deviceMatches as CFArray)
-//        IOHIDManagerSetDeviceMatchingMultiple(managerRef, nil)
+//        IOHIDManagerSetDeviceMatchingMultiple(managerRef, deviceMatches as CFArray) //根據白名單
+        IOHIDManagerSetDeviceMatchingMultiple(managerRef, nil) //顯示全部
         IOHIDManagerScheduleWithRunLoop(managerRef, CFRunLoopGetCurrent(), CFRunLoopMode.defaultMode.rawValue);
         IOHIDManagerOpen(managerRef, IOOptionBits(kIOHIDOptionsTypeNone));
         
@@ -76,5 +76,6 @@ open class HIDDeviceMonitor {
         NotificationCenter.default.post(name: .HIDDeviceDisconnected, object: [
             "id": device.id
         ])
+        
     }
 }
